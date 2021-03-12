@@ -1,0 +1,26 @@
+.welcome_div_class{
+    margin: 10px;
+    text-align: center;
+    padding: 2px;
+    border: blueviolet solid 10px;
+    display: flexbox;
+}
+
+img{
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    height: 500px;
+    float: left;
+      
+}
+
+.second_div_class{
+    background-color: lightblue;
+    border-width: 2px;
+    border-style: solid;
+    border: solid 2px;
+    text-align: center;
+    margin-top: 33%;
+}
+
