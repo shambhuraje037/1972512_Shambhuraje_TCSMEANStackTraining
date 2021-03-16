@@ -1,0 +1,54 @@
+.First_Class{
+    background-image: url("https://cdn.pixabay.com/photo/2021/01/05/06/40/boat-5889919_1280.png");
+    background-position: initial;
+    font-size: 50px;
+    height: 150px;
+    border-style: solid;
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+
+table{
+    align-content: center;
+    tab-size: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: khaki;
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+.pro{
+align-content: center;
+}
+
+a{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+.budget1{
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
