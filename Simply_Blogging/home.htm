@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Blogging</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="Js.js"></script>
+</head>
+<body id="background_image">
+
+    <div >
+        <h1 class="heading">Welcome to the blogging website</h1>
+
+        <div class= "float_left">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><h6>About Us </h6></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><h6>Contact Us</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><h6>Login</h6></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><h6>Blog</h6></a>
+                </li>
+            </ul>  
+        </div>
+    </br></br></br>
+   
+    <div class = "enter_information">
+        <div class="container">
+           <div class="row align-items-center">
+                <div id= "col1"class="col">
+                    <b>Title :  </b>     <input type="text" id="title"/>
+                </div></b>
+            <div class="col">
+               <b> Description : </b><textarea type="text" id="desc"></textarea>
+            </div>
+            <div class="col">
+                    <input type="file" class=" btn btn-success" id="imageId"/>
+           </div>
+                <input id="in_button" type="button" value="Add Blog" class= "btn btn-primary"
+                onclick="addBlog()"/> 
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="blog-holder">
+            <h1>List of Blogs!</h1>
+            <div class="card-container" id="cardContainer">
+                <div>
+                    <h3>Add Blog</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="float: left;">
+    <script>
+        displayBlogListing()
+    </script>
+    </div>
+</body>
+</html>

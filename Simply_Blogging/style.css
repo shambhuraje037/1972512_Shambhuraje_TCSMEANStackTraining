@@ -1,0 +1,112 @@
+#background_image{
+    background-color: silver;
+    background-image: url("https://cdn.pixabay.com/photo/2021/01/05/06/40/boat-5889919_1280.png");
+    background-blend-mode: overlay; 
+   background-size: cover;
+
+}
+
+.container{
+    padding-top: 10px;
+}
+
+textarea{
+    width: 400px;
+    height: 50px;
+
+}
+
+.enter_information{
+    /* border: saddlebrown solid 2px; */
+    margin: 15px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+
+}
+
+#in_button{
+    float: center;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#in_image{
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+#col1{
+    align-content: center;
+    margin-left: 0%;
+}
+
+.float_left{
+    float: right;
+}
+
+h1{ 
+    padding: 20px;
+    /* border: red solid 2px; */
+    margin: 30px;
+    width: auto;
+    height: 100px;
+
+    text-align: center;
+    /* background-color: silver; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30); */
+
+}
+
+h1:hover{
+    color: darkblue;
+}
+
+.display_blog{
+    /* border: solid red 2px; */
+    width : auto;
+    height : 500px;
+    background-color: darkblue;
+
+}
+
+
+.blog-holder{
+    width: auto;
+    text-align: center;
+    align-content: center;
+}
+
+
+.imgHolder {
+	width: 300px;
+	height: 200px;
+	margin: 10px auto;
+    float: left;
+    clear:right;
+    resize: both cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    transition: all .5s ease-in-out;
+}
+
+.card{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.30); */
+    background-color: lightgray;
+    
+}
+
+h5{
+    font-family: 'Lobster', cursive;
+}
+
+.imgHolder:hover{
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+    transform: scale(1.5);
+}
