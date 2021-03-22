@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Manegment</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overlock:ital,wght@1,700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+</head>
+<body class="image-background">
+    <style>
+        .image-background{
+            background-image: url("https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png");
+
+        }
+    </style>
+    <h1>Shooping Cart</h1>
+    <style>
+        h1{
+            text-align: center;
+            
+        }
+    </style>
+        
+        <a href="checkout.html" class="checkout"> Checkout</a>
+        <style>
+            a{
+                text-decoration: none;
+                color: purple;
+             }
+        </style>
+        
+        <div class = "Inner_container">
+            
+           <div class= "float">
+            <div class="box1" style="float: left;">
+                <p><h3>TV</h3></p>
+                <p style="text-align: center;">Price: $700</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('TV', 700)"/>
+                         
+            </div>
+            <div class="box2" style="float: left;">
+                <p><h3>PS5</h3></p>
+                <p style="text-align: center;">Price: $500</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('PS5',500)"/>
+
+            </div>
+            <div class="box3">
+                <p><h3>Dell Laptop</h3></p>
+                <p style="text-align: center;">Price: $800</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('Dell Laptop',800)"/>
+
+            </div>
+        </div>
+            <div class="box4" style="float: left;">
+                <p><h3>iPhone 12 Pro</h3></p>
+                <p style="text-align: center;">Price: $900</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('iPhone 12 Pro',900)"/>
+
+            </div>
+            <div class="box5" style="float: left;" >
+                <p><h3>Samsung S21</h3></p>
+                <p style="text-align: center;">Price: $900</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('Samsung S21',500)"/>
+
+            </div>
+            <div class="box6">
+                <p><h3>Study Table</h3></p>
+                <p style="text-align: center;">Price: $100</p></br>
+            
+            <input type="button" class="btn btn-success " value="add to cart" onclick="addToCart('Study Table',100)"/>
+
+            </div>
+        </div>
+
+        <p class="total-items" id="total">Total Items : 0</p>
+</body>
+</html>

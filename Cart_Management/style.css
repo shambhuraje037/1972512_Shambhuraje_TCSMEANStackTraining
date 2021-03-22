@@ -1,0 +1,99 @@
+.image-background {
+  background-image: url("https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.Inner_container {
+  margin: 90px auto;
+  padding: 100px;
+  width: auto;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  padding: 1px;
+  float: left;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  /* border: solid black; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Bebas Neue", cursive;
+  border-radius: 10%;
+}
+
+input {
+  float: right;
+}
+
+p{
+  text-decoration: floralwhite;
+}
+
+.checkout {
+  float: right;
+  margin-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: "Overlock", cursive;
+  font-size: 50px;
+}
+a {
+  padding: 8px;
+  text-decoration: purple;
+}
+
+.total-items {
+  margin-top: 0px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* color: purple; */
+}
+
+.cent {
+  position: absolute;
+  margin: 2920px 550px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+h2 {
+  font-family: "Overlock", cursive;
+}
