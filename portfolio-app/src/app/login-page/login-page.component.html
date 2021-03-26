@@ -1,0 +1,55 @@
+
+<div class="wrapper">
+  <style>
+    .wrapper{
+      border-radius: 20px;
+      border-style: none;
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
+      margin: 90px 500px;
+      height: 350px;
+      
+    }
+  </style>
+    <h2 style=" height: 40px; padding: 10px; text-align: center; "> <span>Login</span></h2>
+    <br/><br/>
+    <div class="login-box">
+      <style>
+        .login-box{
+          padding: 20px;
+        }
+      </style>
+    <form  #userRef="ngForm" (ngSubmit)="checkUser(userRef.value)" >
+      
+        <div class="row g-3 align-items-center">
+          
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Username</label>
+            </div>
+            <div class="col-auto">
+             <input type="text" class="form-control" name="user" aria-describedby="passwordHelpInline" ngModel/>
+            </div>
+            <div class="col-auto">
+                
+            </div>
+          </div><br/>
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+              <label for="inputPassword6" class="col-form-label">Password</label>&nbsp;
+            </div>
+            <div class="col-auto">
+              <input type="password" class="form-control" name="pwd"  aria-describedby="passwordHelpInline" ngModel/>
+            </div>
+            <div class="col-auto">
+             
+            </div>
+          </div><br/>
+          <button type="submit" class="btn btn-primary" style="margin-left: 100px;">Login</button>
+          <a href="signup-page" style="text-decoration: none; margin-left: 60px;">Sign Up</a>
+         
+      </form>
+      <div>
+        <br>
+        {{msg}}
+      </div>
+    </div>
+</div>

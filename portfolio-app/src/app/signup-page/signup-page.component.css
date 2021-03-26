@@ -1,0 +1,27 @@
+input{
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+label{
+    float:left;
+ 
+        padding: 15px;
+
+}
+
+.effect:hover{
+    background-color: greenyellow;
+}
+
+.sign-deco{
+    margin-left: 500px;
+    
+}
+
+#id{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+}
