@@ -1,0 +1,23 @@
+[
+    {"question":"1)What is the longest that an elephant has ever lived? (That we know of)?",
+        "answer1":"17","answer2":"49","answer3":"86","answer4":"142","correctAnswer":3},
+    {"question":"2)  How many rings are on the Olympic flag?",
+        "answer1":"None","answer2":"4","answer3":"5","answer4":"7","correctAnswer":3},
+    {"question":"3) What is a tarsier?",
+        "answer1":"A Primate","answer2":"A Lizard","answer3":"A Bird","answer4":"None","correctAnswer":1},
+    {"question":"4)  How did Spider-Man get his powers?",
+        "answer1":"Military Experiment gone Wrong","answer2":"Born with it","answer3":"Woke with them after a strange dream","answer4":"Biten by a radioactive spider","correctAnswer":4},
+    {"question":"5) In darts, what's the most points you can score with a single throw?",
+        "answer1":"20","answer2":"50","answer3":"60","answer4":"100","correctAnswer":3},
+    {"question":"6) Which of these animals does NOT appear in the Chinese zodiac?",
+        "answer1":"Bear","answer2":"Rabbit","answer3":"Dragon","answer4":"Dog","correctAnswer":1},
+    {"question":"7)  How many holes are on a standard bowling ball?",
+        "answer1":"2","answer2":"3","answer3":"5","answer4":"10","correctAnswer":2},
+    {"question":"8)  Who killed Greedo?",
+        "answer1":"hannibal Lecter","answer2":"Han Solo","answer3":"Joey","answer4":"Hercules","correctAnswer":2},
+    {"question":"9) What was the first movie in the Marvel Cinematic Universe?",
+        "answer1":"Iron Man","answer2":"Hulk","answer3":"Captain America Civil War","answer4":"Spider-Man","correctAnswer":1},
+    {"question":"10) Which of the following actors never starred as the Joker?",
+        "answer1":"Jim Carrey", "answer2":"Heath Ledger", "answer3":"Jack Nicholson", "answer4":"Joaquin Phoenix", "correctAnswer":1}
+       
+]

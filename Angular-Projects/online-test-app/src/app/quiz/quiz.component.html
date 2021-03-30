@@ -1,0 +1,39 @@
+<div>
+    <h2>&nbsp;&nbsp;Quiz Questions</h2>
+    <div>
+      <fieldset *ngFor="let q of questions" class="wrapper"> 
+        <legend style="margin-left: 100px;" ><b>{{q.question}}</b></legend> 
+                
+         <div style="font-size: 30px;" id="{{q.question}}1" name="1">
+            <input id="answer1" type="radio" name="{{q.question}}" #a1 required 
+                (click)="onSelect(q.question,1);" style="margin-left: 150px; padding: 20px;"/>
+            <label style="font-size: 20px;" for="answer1">&nbsp; {{q.answer1}}</label> 
+        </div> 
+         <div style="font-size: 30px;" id="{{q.question}}2" name="2">
+            <input type="radio" name="{{q.question}}" #a2 id="answer2"  required 
+                (click)="onSelect(q.question,2);"  style="margin-left: 150px; padding:20px"/>
+            <label style="font-size: 20px;" for="answer2">&nbsp; {{q.answer2}}</label> 
+        </div>
+        <div style="font-size: 30px;" id="{{q.question}}3" name="3">
+            <input type="radio" name="{{q.question}}" #a3 id="answer3" required 
+                (click)="onSelect(q.question,3);"  style="margin-left: 150px; padding: 20px;"/>
+            <label style="font-size: 20px;" for="answer3">&nbsp; {{q.answer3}}</label> 
+        </div>
+        <div style="font-size: 30px;" id="{{q.question}}4" name="4">
+            <input type="radio" name="{{q.question}}" #a4 id="answer4" required 
+                (click)="onSelect(q.question,4);" style="margin-left: 150px; width: auto; padding:20px"/>
+            <label style="font-size: 20px;" for="answer4">&nbsp; {{q.answer4}}</label> 
+        </div>
+      </fieldset> 
+      <br/>
+    </div>
+    <div style="padding: 10px; margin-bottom: 20px;">
+      <input type="submit" class="look-and-feels" value="Submit Answers" (click)="onSubmit()" [disabled]="click"  />
+    <div *ngIf="resultFlag">
+      <b [style.color]="resultColor()" style="margin-left: 600px; font-size: 50px;">{{msg1}}: {{numCorrect}}/10<br/>
+        <p style="text-align: center; font-size: 30px;">
+        {{msg}}</p>
+        </b>
+    </div>
+    </div>
+</div>
