@@ -1,0 +1,90 @@
+<div>
+
+<div class="col1">
+    <h2>Enter Details</h2>
+   <div class="content-wrapper">
+    <form #empRef= "ngForm" (ngSubmit)="storeEmp(empRef.value)">
+        
+        <mat-form-field appearance="fill" style="width: 400px; font-size: larger;">
+            <mat-label style="text-align: center;">Id</mat-label>
+            <input matInput type="text" name="id" style="height: 20px; font-size: larger; font-family: 'Pontano Sans', sans-serif;" ngModel/>
+        </mat-form-field><br/><br/>
+        <mat-form-field appearance="fill" style="width: 400px; font-size: larger;">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" style="height: 20px; font-size: larger;font-family: 'Pontano Sans', sans-serif;" ngModel/>
+        </mat-form-field><br/><br/>
+        <mat-form-field appearance="fill" style="width: 400px; font-size: larger;">
+            <mat-label>Task</mat-label>
+            <input matInput type="textarea" name="task" style="height: 20px; font-size: larger;font-family: 'Pontano Sans', sans-serif;" ngModel/>
+        </mat-form-field><br/><br/>
+        <mat-form-field appearance="fill" style="width: 400px;" style="height: 20px;font-size: larger;">
+            <mat-label>Date</mat-label>
+            <input matInput type="date" name = "deadline"style="font-size: small;font-family: 'Pontano Sans', sans-serif;" ngModel/>
+        </mat-form-field><br/><br/><br/>
+        <button mat-raised-button color="primary" type="submit" style="width: 100px; height: 40px; font-size: larger; margin-left: 10px;">Submit</button>
+        <button mat-raised-button color="primary" type="reset" style="width: 100px; height: 40px; font-size: larger; margin-left: 20px;">Reset</button>
+        
+    </form>    
+</div><br/><br/><br/>
+<!-- <button mat-raised-button color="primary" style="width: 100px; height: 40px; font-size: larger; margin-left: 1px;">Submit</button>
+<button mat-raised-button color="primary" style="width: 100px; height: 40px; font-size: larger; margin-left: 1px;">Reset</button> -->
+
+</div>
+<div class="col2">
+    <h2 style="text-align: center; border-radius: 10px; margin-left: 32%; width: 30%;
+    ">Employee and Task Details</h2>
+   
+  
+    <table mat-table [dataSource]="task" class="mat-elevation-z8" style="width: 95%; margin-top: 50px; border-radius: 10px;">
+
+
+        <!-- Employee Id Column -->
+        <ng-container matColumnDef="id" style="border-radius: 10px;">
+            <th mat-header-cell *matHeaderCellDef style="width: 20%; font-size: larger;"> Employee Id </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name" style="border-radius: 10px;">
+            <th mat-header-cell *matHeaderCellDef style="width: 20%; font-size: larger;"> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- Task Name Column -->
+        <ng-container matColumnDef="task">
+            <th mat-header-cell *matHeaderCellDef style="width: 40%;font-size: larger;"> Task </th>
+            <td mat-cell *matCellDef="let element"> {{element.task}} </td>
+        </ng-container>
+
+        <!-- Deadline Column -->
+        <ng-container matColumnDef="deadline">
+            <th mat-header-cell *matHeaderCellDef style="width: 10%;font-size: larger;"> Deadline </th>
+            <td mat-cell *matCellDef="let element"> {{element.deadline}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayDetails"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayDetails;"></tr>
+    </table>
+
+
+    <!-- <table border="1">
+        <tr>
+            <th class="whiteTextBody">Employee Id</th>
+            <th class="whiteTextBody">Name</th>
+            <th class="whiteTextBody">Task</th>
+            <th class="whiteTextBody">Deadline</th>
+        </tr>
+
+
+        <tr *ngFor="let task of task">
+            <td class="whiteTextTable ">{{task.id}}</td>
+            <td class="whiteTextTable ">{{task.name}}</td>
+            <td class="whiteTextTable ">{{task.task}}</td>
+            <td class="whiteTextTable ">{{task.deadlin}}</td>
+        </tr>
+
+
+    </table> -->
+   
+</div>
+</div>
